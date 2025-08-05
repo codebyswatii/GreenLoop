@@ -487,5 +487,29 @@ body {
   }
 }
 
+.login-container {
+  margin-left: 1rem;
+}
+
+@media (min-width: 769px) {
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav,
+  .login-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+
 
 
