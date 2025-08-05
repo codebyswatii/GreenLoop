@@ -448,4 +448,12 @@ body {
   background-color: #256428;
 }
 
+.logo-text {
+  color: #9acd32;  /* Matches your brand green */
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+
 
