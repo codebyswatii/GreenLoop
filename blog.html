@@ -233,6 +233,32 @@
     padding: 1rem;
   }
 }
+    .blog-post {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+  flex: 1 1 320px;
+  max-width: 500px;
+  min-width: 0;
+  height: auto;              /* ✅ allow content to define height */
+}
+.blog-content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.blog-post img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;  /* Or adjust as needed */
+  object-fit: cover;
+}
+
 /* ...existing code... */
   </style>
 </head>
