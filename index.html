@@ -30,7 +30,7 @@
 </a>
 
       
-
+ <button class="hamburger" id="hamburger">&#9776;</button> 
       <nav class="nav">
         <ul>
           <li><a href="#">Home</a></li>
@@ -41,7 +41,7 @@
   🛒 Cart (<span id="cart-count">0</span>)
 </a>
 </li>
-         
+            <li> <a href="login.html" class="btn-login-nav">Login / Signup</a></li>
 
         </ul>
       </nav>
@@ -226,6 +226,13 @@ if (navList) {
       localStorage.removeItem("currentUser");
       window.location.reload();
     }
+  });
+
+   const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
   });
 </script>
 
