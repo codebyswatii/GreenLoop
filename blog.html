@@ -327,6 +327,25 @@
     overflow: visible; /* ✅ if text is being clipped */
   }
 }
+    .blog-post {
+  display: block;           /* ✅ remove flex layout */
+  height: auto;             /* ✅ allow to grow */
+}
+
+.blog-content {
+  display: block;           /* ✅ ensure natural flow */
+  height: auto;             /* ✅ allow full height */
+  overflow: visible;        /* ✅ prevent text clipping */
+  flex: none !important;    /* ✅ override flex shrinking */
+}
+
+.blog-content p {
+  display: block;
+  overflow: visible;
+  white-space: normal;      /* ✅ wrap text normally */
+  max-height: none;         /* ✅ remove hidden height cap */
+}
+
 
   </style>
 </head>
