@@ -258,7 +258,7 @@
   max-height: 220px;  /* Or adjust as needed */
   object-fit: cover;
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .container {
     flex-direction: column;
     gap: 1rem;
@@ -289,8 +289,45 @@
     margin-bottom: 1rem;
   }
 }
-
+ */
 /* ...existing code... */
+
+    @media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .blog-post {
+    max-width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* ✅ important */
+  }
+
+  .blog-post img {
+    max-height: 180px;
+  }
+
+  .blog-content {
+    padding: 1rem;
+    display: block;
+    height: auto; /* ✅ allow to grow */
+    overflow: visible; /* ✅ allow content */
+    flex: none; /* ✅ remove any flex shrink/grow conflicts */
+  }
+
+  .blog-content p {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    overflow: visible; /* ✅ if text is being clipped */
+  }
+}
+
   </style>
 </head>
 <body>
